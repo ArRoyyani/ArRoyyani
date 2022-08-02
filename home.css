@@ -1,0 +1,780 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: sans-serif;
+    background-color: #ddd;
+}
+
+.container {
+    width: 960px;
+    margin: auto;
+    padding: 0px auto;
+    background-color: aliceblue;
+}
+
+#mainMenu {
+    display: none;
+}
+
+                    /* ===NAVBAR=== */
+nav {
+    display: flex;
+    background-color: rgb(2, 206, 2);
+    height: 50px;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom: 2px solid white;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+    z-index: 2;
+}
+
+nav .logo {
+    width: 40%;
+    font-size: 40px;
+    font-family: 'Courier New', Courier, monospace;
+    letter-spacing: 2px;
+    color: rgb(0, 71, 0);
+    margin: 0px 20px 0px 70px;
+}
+
+.topmenu, .submenu {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.topmenu {
+    width: 60%;
+}
+
+.container li a {
+    display: block;
+    text-decoration: none;
+    font-size: 0.8em;
+    height: 30px;
+    line-height: 30px;
+    padding: 5px 20px;
+    background-color: rgb(2, 206, 2);
+    color: black;
+    border-radius: 20px;
+    font-weight: bold;
+}
+
+.container li ul li a {
+    text-align: center;
+    border-top: 2px solid white;
+}
+
+ul.submenu li {
+    width: 130px;
+}
+
+.topmenu li:hover>a {
+    background-color: lightgreen;
+    color: green;
+}
+
+.container ul li {
+    position: relative;
+    float: left;
+}
+
+.topmenu li:hover ul {
+    left: 0;
+}
+
+ul.submenu {
+    position: absolute;
+    top: 42px;
+    left: -2000px;
+}
+
+                    /* === BAGIAN MAIN === */
+body main section {
+    width: 660px;
+    float: left;
+    box-sizing: border-box;
+}
+
+main section h1 {
+    text-align: center;
+    padding: 3px 0px;
+    color: rgb(1, 85, 1);
+}
+
+main section .garis {
+    width: 70%;
+    margin: auto;
+}
+
+main section article {
+    padding-left: 20px;
+    margin: 10px 0px;
+    overflow: hidden;
+}
+
+main section header h2 {
+    font-size: 18px;
+}
+
+main section header h2 a {
+    text-decoration: none;
+    color: black;
+}
+
+main section header h2 a:hover {
+    color: green;
+}
+
+.date {
+    font-size: 10px;
+    color: gray;
+}
+
+.date a {
+    text-decoration: none;
+    color: green;
+}
+
+.date a:hover {
+    color: lightgreen;
+}
+
+.isi_artikel {
+    margin-top: 10px
+    
+}
+
+article .isi_artikel p {
+    font-size: 15px;
+    text-align: justify;
+}
+
+p a {
+    text-decoration: none;
+    color: blue;
+}
+
+p a:hover {
+    color: rgb(1, 167, 1);
+}
+
+article .isi_artikel figure {
+    float: right;
+    margin: 0px 10px;
+}
+
+.isi_artikel img {
+    height: 150px;
+    width: 250px;
+    float: right;
+    border: 1px solid black;
+    padding: 3px;
+    opacity: 1;
+    transition: 0.5s;
+  }
+
+.isi_artikel img:hover {
+    opacity: 0.7;
+    cursor: pointer;
+  }
+
+  article .isi_artikel figcaption {
+    font-size: 10px;
+    text-align: center;
+  }
+
+  article .isi_artikel figcaption a {
+    text-decoration: none;
+  }
+
+  .garisfull {
+    display: none;
+  }
+
+                    /* === BAGIAN SIDEBAR SATU === */
+aside {
+    width: 300px;
+    float: left;
+    padding: 0px;
+    margin: 0px;
+}
+
+aside h1 {
+    text-align: center;
+    padding: 3px 0px;
+    font-size: 24px;
+    color: rgb(1, 85, 1)
+}
+
+.isi_sidebar {
+    margin: 0px;
+    padding: 0px;
+}
+
+aside .garis {
+    width: 70%;
+    margin: auto;
+    color: green;
+}
+
+aside .isi_sidebar section {
+    margin-bottom: 10px;
+    padding: 0px 20px 0px 10px;
+}
+
+aside .isi_sidebar section h2 {
+    text-align: center;
+    font-size: 18px;
+    padding-bottom: 5px;
+    margin-top: 5px;
+}
+
+section .garis {
+    width: 50%;
+    margin: auto;
+}
+
+aside .isi_sidebar section h3 {
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+aside .isi_sidebar section h2 a {
+    text-decoration: none;
+    color: green;
+}
+
+aside .isi_sidebar section h2 a:hover {
+    color: lightgreen;
+}
+
+aside .isi_sidebar section h3 a {
+    text-decoration: none;
+    color: black;
+}
+
+aside .isi_sidebar section h3 a:hover {
+    color: green;
+}
+
+aside .isi_sidebar section p {
+    font-size: 10px;
+    color: gray;
+}
+
+.garis_main {
+    margin: 0px 20px;
+    padding-bottom: 10px;
+    display: block;
+    clear: both;
+    border-top: 2px solid gray;
+}
+
+                    /* === BAGIAN SIDEBAR DUA === */
+section {
+    width: 100%;
+    margin: auto;
+    float: left;
+}
+
+section .populer {
+    width: 320px;
+    padding-left: 20px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+
+section .penting {
+    width: 320px;
+    float: left;
+    padding: 0px 10px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+
+section .favorit {
+    width: 320px;
+    padding-right: 20px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+
+section aside h2 {
+    text-align: center;
+    font-size: 20px;
+    padding: 3px 0px;
+    color: rgb(1, 85, 1);
+}
+
+section .populer h3 a, .penting h3 a, .favorit h3 a {
+    text-decoration: none;
+    color: black;
+}
+
+section .populer h3 a:hover, .penting h3 a:hover, .favorit h3 a:hover {
+    color: green;
+}
+
+section aside .garis {
+    width: 50%;
+}
+
+section aside figure {
+    float: left;
+    margin: 10px 5px 0px 0px;
+}
+
+section aside img {
+    width: 100px;
+    float: left;
+    border: 1px solid black;
+    padding: 2px;
+    opacity: 1;
+    transition: 0.5s;
+}
+
+section aside img:hover {
+	  opacity: 0.7;
+	  cursor: pointer;
+}
+
+section aside figure figcaption {
+    font-size: 8px;
+    text-align: center;
+}
+
+section aside figcaption a {
+    text-decoration: none;
+}
+
+section aside h3 {
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+section aside p {
+    font-size: 10px;
+    color: gray;
+    margin-bottom: 10px;
+}
+
+.clear {
+    clear: both;
+}
+
+                    /* === BAGIAN FOOTER === */
+footer {
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    background-color: rgb(2, 206, 2);
+    border-radius: 20px 20px 0px 0px;
+    border-top: 3px solid white;
+}
+
+footer section {
+    width: 20%;
+    margin: 0 auto;
+}
+
+footer section h3 {
+    font-family: 'comic sans ms';
+    font-weight: bold;
+    font-size: 18px;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+footer section h3 a, footer section p a {
+    text-decoration: none;
+    color:rgb(0, 71, 0)
+}
+
+footer section p {
+    background: aliceblue;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    padding: 5px 10px 5px 10px;
+    color: black;
+    cursor: pointer;
+    font-size: 10;
+}
+
+footer section h3 a:hover {
+    color: lightgreen;
+}
+
+.copyright {
+    text-align: center;
+    width: 100%;
+    padding: 10px 0px 10px 0px;
+    background-color: darkgreen;
+    color: white;
+}
+
+                    /* === BAGIAN RESPONSIVE === */
+/* Ukurang Tablet/Lanscape */
+@media screen and (max-width: 768px) {
+    .container {
+        width: 640px;
+    }
+
+    nav {
+        width: 640px;
+    }
+
+    nav .logo {
+        width: 40%;
+        margin: 0 auto;
+        letter-spacing: none;
+        font-size: 35px;
+        text-align: center;
+        font-weight: bold;
+    }
+
+    nav .topmenu {
+        width: 60%;
+        margin: 0 auto;
+    }
+
+    .container .submenu {
+        background-color: rgb(2, 206, 2);
+        z-index: 3;
+    }
+
+    .container .topmenu li a {
+        padding: 5px 10px;
+        text-align: center;
+        height: 30px;
+        font-weight: 30px;
+    }
+
+    /* === BAGIAN UTAMA === */
+
+    main {
+        width: 60%;
+    }
+
+    .isi_artikel figure {
+        width: 40%;
+        margin: 0 auto;
+        float: right;
+    }
+
+    .isi_artikel figure img {
+        margin-right: 30px;
+        width: 220px;
+    }
+
+    article .isi_artikel figcaption {
+        margin-right: 30px;
+    }
+
+    .garisfull {
+        display: block;
+        margin: 0 20px;
+        border-top: 1px solid gray;
+        clear: both;
+    }
+
+    /* === BAGIAN SIDEBAR SATU === */
+
+    aside {
+        width: 100%;
+        margin: 10px 10px;
+        float: none;
+    }
+
+    aside h1 {
+        text-align: center;
+    }
+
+    aside .isi_sidebar section {
+        width: 30%;
+    }
+
+    aside .isi_sidebar .sidOpini {
+        padding-right: 8px;
+    }
+
+    aside .isi_sidebar .sidCerpen {
+        padding: 0 8px;
+    }
+
+    aside .isi_sidebar .sidPuisi {
+        padding: 0 5px;
+    }
+
+    /* === BAGIAN SIDEBAR DUA === */
+    .sesi {
+        width: 100%;
+    }
+
+    .container .sesi aside {
+        width: 210px;
+        float: left;
+    }
+
+    section .populer {
+        width: 100%;
+        margin-left: 0;
+        margin-right: 5px;
+    }
+
+    section .penting {
+        width: 100%;
+        margin-right: 5px;
+        margin-left: 0;
+    }
+
+    section .favorit {
+        width: 100%;
+        margin-right: 0;
+        margin-left: 0;
+    }
+
+    .sesi aside .garis {
+        width: 70%;
+    }
+
+    .sesi aside figure {
+        margin-bottom: 5px;
+    }
+
+    .sesi aside figure img {
+        width: 100%;
+    }
+
+    .sesi aside p {
+        margin-bottom: 0px;
+    }
+
+    .clear {
+        display: none;
+    }
+
+    /* === BAGIAN FOOTER === */
+    footer section p {
+        font-size: 12px;
+    }
+
+    .copyright {
+        font-size: 14px;
+    }
+}
+
+/* Ukuran Mobile */
+@media only screen and (max-width: 480px) {
+    .container {
+        width: 350px;
+    }
+
+    .container nav {
+        width: 350px;
+        border-bottom: 5px solid rgb(2, 206, 2);
+    }
+
+    nav .logo {
+        width: 350px;
+        font-size: 40px;
+        position: absolute;
+    }
+
+    nav .topmenu {
+        display: none;
+    }
+
+    #mainMenu {
+        display: block;
+        width: 100%;
+        float: none;
+        margin-top: 70px;
+        text-align: center;
+    }
+
+    /* === BAGIAN UTAMA === */
+
+    .utama {
+        margin: auto;
+        width: 100%;
+    }
+
+    .seksi {
+        width: 100%;
+    }
+
+    .seksi h1 {
+        margin-top: 15px;
+    }
+
+    .seksi article {
+        width: 100%;
+        padding: 0;
+        box-sizing: border-box;
+        margin: 10px auto;
+    }
+
+    .seksi article header h2, .date {
+        margin-left: 10px;
+    }
+
+    .seksi article .isi_artikel {
+        margin: 10px auto;
+        box-sizing: border-box;
+    }
+
+    .seksi article .isi_artikel figure img {
+        width: 320px;
+        margin: auto;
+    }
+
+    .seksi article .isi_artikel figure figcaption {
+        margin: auto;
+        text-align: center;
+    }
+
+    .seksi article .isi_artikel p {
+        width: 330px;
+        float: left;
+        padding: 0 10px;
+    }
+
+    .garisfull {
+        margin: 0 10px;
+    }
+
+    /* === BAGIAN SIDEBAR SATU === */
+    aside {
+        width: 350px;
+        margin: 0;
+    }
+
+    aside h1 {
+        padding-top: 10px;
+    }
+
+    aside .isi_sidebar section {
+        width: 330px;
+    }
+
+    aside .isi_sidebar .sidOpini {
+        padding-top: 5px;
+        padding-left: 20px;
+    }
+
+    aside .isi_sidebar .sidCerpen {
+        padding-left: 20px;
+    }
+
+    aside .isi_sidebar .sidPuisi {
+        padding-left: 20px;
+    }
+
+    /* === BAGIAN SIDEBAR DUA === */
+    .container .sesi {
+        width: 350px;
+        margin: auto;
+    }
+
+    .container .sesi aside {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .container .sesi .populer {
+        width: 330px;
+        margin-top: 5px;
+    }
+
+    .container .sesi .penting {
+        width: 100%;
+        margin: 0 auto;
+        padding-top: 5px;
+    }
+
+    .container .sesi .penting figure {
+        margin-left: 10px;
+    }
+
+    .container .sesi .favorit {
+        width: 100%;
+        margin: 0px 10px;
+        padding-top: 5px;
+        padding-bottom: 10px;
+    }
+
+    .container .sesi .favorit figure {
+        margin-left: 10px;
+    }
+
+    .sesi aside h2 {
+        text-align: center;
+    }
+
+    .sesi aside figure {
+        margin: 10px 5px 0px 0px;
+        clear: both;
+    }
+
+    .sesi aside figure img {
+        width: 100px;
+        float: left;
+        border: 1px solid black;
+        padding: 2px;
+        opacity: 1;
+        transition: 0.5s;
+    }
+
+    .sesi aside figure figcaption {
+        font-size: 8px;
+        text-align: center;
+        clear: both;
+    }
+
+    .sesi aside h3 {
+        margin-top: 10px;
+        font-size: 16px;
+        float: left;
+    }
+    
+    .sesi aside p {
+        font-size: 10px;
+        color: gray;
+        float: left;
+        margin-left: 0;
+    }
+    
+    .clear {
+        clear: both;
+    }
+
+    /* === BAGIAN FOOTER === */
+    footer section {
+        width: 310px;
+    }
+
+    footer section .top {
+        padding-top: 5px;
+    }
+
+    footer section p {
+        margin-bottom: 5px;
+    }
+
+    footer .down {
+        margin-bottom: 10px;
+    }
+
+    .copyright {
+        font-size: 12px;
+    }
+}
